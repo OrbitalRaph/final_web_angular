@@ -1,0 +1,49 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let character of characters">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <mat-icon>person</mat-icon>
+                <span>{{character.name}} - {{character.title}}</span>
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <h2>Informations</h2>
+        <p>{{character.description}}</p>
+        <mat-list>
+            <mat-list-item>Type d'arme: {{character.weapon_type}}</mat-list-item>
+            <mat-list-item>Élément: {{character.element}}</mat-list-item>
+            <mat-list-item>Affiliation: {{character.affiliation}}</mat-list-item>
+            <mat-list-item>Région: {{character.region}}</mat-list-item>
+            <mat-list-item>Rareté: {{character.rarity}}</mat-list-item>
+            <mat-list-item>Anniversaire: {{formatBirthday(character.birthday)}}</mat-list-item>
+            <mat-list-item>Constellation: {{character.constellation}}</mat-list-item>
+        </mat-list>
+        <br><mat-divider></mat-divider>
+        <mat-list>  
+            <br><h2>Constellations</h2>
+            <mat-list-item  *ngFor="let constellation of character.constellations">
+                <span>{{constellation.level}}) {{constellation.name}}</span><br>
+            </mat-list-item>
+        </mat-list>
+        <br><mat-divider></mat-divider>
+        <br><h2>Compétences</h2>
+        <h3>actives</h3>
+        <mat-expansion-panel *ngFor="let skill of character.skills">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <span>{{skill.name}}</span>
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list *ngFor="let attribute of skill.attributes">
+                <mat-list-item>
+                    <span>{{attribute.label}}: {{attribute.value}}</span>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+        <br><h3>passives</h3>
+        <mat-list>
+            <mat-list-item *ngFor="let passive of character.passives">
+                <span> - {{passive}}</span>
+            </mat-list-item>
+        </mat-list>
+    </mat-expansion-panel>
+</mat-accordion>

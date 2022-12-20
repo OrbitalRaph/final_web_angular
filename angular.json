@@ -4,6 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "final_web_angular": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "fr-CA": {
+            "translation": "src/locale/messages.fr-CA.xlf",
+            "baseHref": ""
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +22,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "fr-CA"
+            ],
             "outputPath": "dist/final_web_angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -23,6 +35,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -55,7 +68,8 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "localize": ["fr-CA"]
             }
           },
           "defaultConfiguration": "production"
@@ -90,6 +104,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
