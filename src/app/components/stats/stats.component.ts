@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { StatistiquesService } from '../../services/statistiques.service';
+import { Stats } from '../../models/stats';
 
 @Component({
   selector: 'app-stats',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private statistiquesService: StatistiquesService) { }
 
-  ngOnInit(): void {
+  byWeapon: Stats[] = [];
+  byRarity: Stats[] = [];
+  byElement: Stats[] = [];
+
+  getByWeapon(): void {
+    this.statistiquesService.getCharacterCountByWeaponType()
+      .subscribe(byWeapon => this.byWeapon = byWeapon);
   }
 
+  getByRarity(): void {
+    this.statistiquesService.getCharacterCountByRarity()
+      .subscribe(byRarity => this.byRarity = byRarity);
+  }
+
+  getByElement(): void {
+    this.statistiquesService.getCharacterCountByElement()
+      .subscribe(byElement => this.byElement = byElement);
+  }
+
+  ngOnInit(): void {
+    
+  }
 }

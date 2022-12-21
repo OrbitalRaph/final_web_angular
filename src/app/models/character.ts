@@ -14,8 +14,8 @@ export class Character {
         public rarity: number,
         public birthday: string,
         public constellation: string,
-        public constellations: Constellation[],
-        public passives: string[],
-        public skills: Skills[],
+        public constellations?: Constellation[],
+        public passives?: string[],
+        public skills?: Skills[],
     ) {}
 }

@@ -1,0 +1,54 @@
+
+<form #characterForm="ngForm" id="characterform" (ngSubmit)="updateCharacter(characterForm)">
+    <h1>Ajouter un personnage</h1>
+    <mat-form-field>
+        <input matInput placeholder="Nom" name="name" [(ngModel)]="character.name" required>
+        <mat-error>Le nom est requis</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Titre" name="title" [(ngModel)]="character.title" required>
+        <mat-error>Le titre est requis</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Description" name="description" [(ngModel)]="character.description" required>
+        <mat-error>La description est requise</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="Type d'arme" name="weapon_type" [(ngModel)]="character.weapon_type" required>
+            <mat-option *ngFor="let weapon of weapons" [value]="weapon">{{weapon}}</mat-option>
+        </mat-select>
+        <mat-error>Le type d'arme est requis</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="Element" name="element" [(ngModel)]="character.element" required>
+            <mat-option *ngFor="let element of elements" [value]="element">{{element}}</mat-option>
+        </mat-select>
+        <mat-error>L'élément est requis</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Affiliation" name="affiliation" [(ngModel)]="character.affiliation" required>
+        <mat-error>L'affiliation est requise</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Région" name="region" [(ngModel)]="character.region" required>
+        <mat-error>La région est requise</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-select placeholder="Rareté" name="rarity" [(ngModel)]="character.rarity" required>
+            <mat-option *ngFor="let rarity of rarities" [value]="rarity">{{rarity}}</mat-option>
+        </mat-select>
+        <mat-error>Ce champ est requis</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Anniversaire (AAAA-MM-JJ)" name="birthday" [(ngModel)]="character.birthday" pattern="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$" required>
+        <mat-hint>Format: AAAA-MM-JJ</mat-hint>
+        <mat-error *ngIf="characterForm.controls['birthday'] && characterForm.controls['birthday'].hasError('pattern')">Format invalide</mat-error>
+        <mat-error *ngIf="characterForm.controls['birthday'] && characterForm.controls['birthday'].hasError('required')">Ce champ est requis</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Constellation" name="constellation" [(ngModel)]="character.constellation" required>
+        <mat-error>Ce champ est requis</mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="!characterForm.form.valid">Modifier</button>
+</form>

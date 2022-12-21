@@ -17,6 +17,15 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
 import { StatsComponent } from './components/stats/stats.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { CharacterAddFormComponent } from './components/character-add-form/character-add-form.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { CharacterModifyFormComponent } from './components/character-modify-form/character-modify-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +35,9 @@ import { StatsComponent } from './components/stats/stats.component';
     CharacterComponent,
     PiedDePageComponent,
     AccueilComponent,
-    StatsComponent
+    StatsComponent,
+    CharacterAddFormComponent,
+    CharacterModifyFormComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +49,14 @@ import { StatsComponent } from './components/stats/stats.component';
     MatTabsModule,
     MatExpansionModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonToggleModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

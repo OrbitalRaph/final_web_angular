@@ -1,1 +1,42 @@
-<p>stats works!</p>
+<div class="container">
+    <h1>Page des statistiques</h1>
+    <p>Cette page affiche des statistiques sur le nombre de personnages enregistrés sur le site.</p>
+</div>
+    <mat-accordion >
+        <mat-expansion-panel (afterExpand)="getByElement()">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Nombre de personnages par élément
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let stat of byElement">
+                    <span>{{stat._id}}: {{stat.count}}</span>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel (afterExpand)="getByWeapon()">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Nombre de personnages par type d'armes
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let stat of byWeapon">
+                    <span>{{stat._id}}: {{stat.count}}</span>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel (afterExpand)="getByRarity()">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Nombre de personnages par rareté
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let stat of byRarity">
+                    <span>{{stat._id}}: {{stat.count}}</span>
+                </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-accordion>
