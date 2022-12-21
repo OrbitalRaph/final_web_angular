@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EnteteComponent } from './components/entete/entete.component';
 import { CharacterListComponent } from './components/character-list/character-list.component';
-import { CharacterComponent } from './components/character/character.component';
 import { PiedDePageComponent } from './components/pied-de-page/pied-de-page.component';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { MatToolbarModule}  from '@angular/material/toolbar';
@@ -32,7 +31,6 @@ import { CharacterModifyFormComponent } from './components/character-modify-form
     AppComponent,
     EnteteComponent,
     CharacterListComponent,
-    CharacterComponent,
     PiedDePageComponent,
     AccueilComponent,
     StatsComponent,

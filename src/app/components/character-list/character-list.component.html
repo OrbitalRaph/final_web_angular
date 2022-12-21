@@ -1,28 +1,28 @@
 <div class="container">
-    <h1>Page des personnages</h1>
-    <p>Cette page affiche la liste des personnages du jeu Genshin Impact enregistrés sur le site.</p>
+    <h1 i18n>Character's page</h1>
+    <p i18n>This page displays the list of characters from the Genshin Impact game registered on the site.</p>
 
-    <p>Vous pouvez filtrer la liste en sélectionnant des attributs:</p>
-    <h4>Élément :</h4>
+    <p i18n>You can filter the list by selecting attributes:</p>
+    <h4 i18n>Element :</h4>
     <mat-button-toggle-group name="element" aria-label="Element">
         <mat-button-toggle *ngFor="let element of elements" value="{{element}}" #elementBtn
             (change)="onElementFilterChange(elementBtn.value)">{{element}}</mat-button-toggle>
     </mat-button-toggle-group>
 
-    <h4>Type d'arme :</h4>
+    <h4 i18n>Weapon type :</h4>
     <mat-button-toggle-group name="weapon" aria-label="Weapon">
         <mat-button-toggle *ngFor="let weapon of weapons" value="{{weapon}}" #weaponBtn
             (change)="onWeaponFilterChange(weaponBtn.value)">{{weapon}}</mat-button-toggle>
     </mat-button-toggle-group>
 
-    <h4>Rareté :</h4>
+    <h4 i18n>Rarity :</h4>
     <mat-button-toggle-group name="rarity" aria-label="Rarity">
         <mat-button-toggle *ngFor="let rarity of rarities" value="{{rarity}}" #rarityBtn
             (change)="onRarityFilterChange(rarityBtn.value)">{{rarity}}</mat-button-toggle>
     </mat-button-toggle-group>
 
-    <p>Vous pouvez également ajouter un personnage en cliquant sur le bouton ci-dessous:</p>
-    <button mat-raised-button color="primary" routerLink="/personnages/add">Ajouter un personnage</button>
+    <p i18n>You can also add a character by clicking on the button below:</p>
+    <button mat-raised-button color="primary" routerLink="/personnages/add" i18n>Add a character</button>
 </div>
 
 <div class="accordion-list">
@@ -42,22 +42,22 @@
                 <mat-icon>delete</mat-icon>
                 delete
             </button>
-            <h2>Informations</h2>
+            <h2 i18n>Informations</h2>
             <p>{{character.description}}</p>
             <mat-list>
-                <mat-list-item>Type d'arme: {{character.weapon_type}}</mat-list-item>
-                <mat-list-item>Élément: {{character.element}}</mat-list-item>
-                <mat-list-item>Affiliation: {{character.affiliation}}</mat-list-item>
-                <mat-list-item>Région: {{character.region}}</mat-list-item>
-                <mat-list-item>Rareté: {{character.rarity}}</mat-list-item>
-                <mat-list-item>Anniversaire: {{formatBirthday(character.birthday)}}</mat-list-item>
-                <mat-list-item>Constellation: {{character.constellation}}</mat-list-item>
+                <mat-list-item i18n>Weapon type: {{character.weapon_type}}</mat-list-item>
+                <mat-list-item i18n>Element: {{character.element}}</mat-list-item>
+                <mat-list-item i18n>Affiliation: {{character.affiliation}}</mat-list-item>
+                <mat-list-item i18n>Region: {{character.region}}</mat-list-item>
+                <mat-list-item i18n>Rarity: {{character.rarity}}</mat-list-item>
+                <mat-list-item i18n>Birthday: {{formatBirthday(character.birthday)}}</mat-list-item>
+                <mat-list-item i18n>Constellation: {{character.constellation}}</mat-list-item>
             </mat-list>
             <ng-container *ngIf="character.constellations && character.constellations.length > 0">
                 <br><mat-divider></mat-divider>
                 <mat-list>
                     <br>
-                    <h2>Constellations</h2>
+                    <h2 i18n>Constellations</h2>
                     <mat-list-item *ngFor="let constellation of character.constellations">
                         <span>{{constellation.level}}) {{constellation.name}}</span><br>
                     </mat-list-item>
@@ -66,8 +66,8 @@
             <ng-container *ngIf="character.skills && character.skills.length > 0">
                 <br><mat-divider></mat-divider>
                 <br>
-                <h2>Compétences</h2>
-                <h3>actives</h3>
+                <h2 i18n>Skills</h2>
+                <h3 i18n>actives</h3>
                 <mat-expansion-panel *ngFor="let skill of character.skills">
                     <mat-expansion-panel-header>
                         <mat-panel-title>
@@ -81,7 +81,7 @@
                     </mat-list>
                 </mat-expansion-panel>
                 <br>
-                <h3>passives</h3>
+                <h3 i18n>passives</h3>
                 <mat-list>
                     <mat-list-item *ngFor="let passive of character.passives">
                         <span> - {{passive}}</span>

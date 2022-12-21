@@ -2,18 +2,378 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="5311256835884499050" datatype="html">
+        <source>final website project - Character management</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="757373727671494001" datatype="html">
+        <source>By: Raphaël Boisvert</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7822051953102342118" datatype="html">
+        <source> This website allows you to manage video game characters.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> It is possible to add, modify and delete characters and more.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> I ran out of time and the project is not perfect, but it works. (I think) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/accueil/accueil.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3696939826044244114" datatype="html">
+        <source>Add a character</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3833692663709091545" datatype="html">
+        <source>Name is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5642836248241530789" datatype="html">
+        <source>Title is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6240684629381435026" datatype="html">
+        <source>Description is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3930873030576028698" datatype="html">
+        <source>Weapon type is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2938777619810927719" datatype="html">
+        <source>Element is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="126555550952132860" datatype="html">
+        <source>Affiliation is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5058570228585418543" datatype="html">
+        <source>Region is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5052201995180062863" datatype="html">
+        <source>Rarity is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7262752991694600690" datatype="html">
+        <source>Format: YYYY-MM-DD</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="247664350209085263" datatype="html">
+        <source>Invalid format</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7955775646492116825" datatype="html">
+        <source>Birthday is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="419529017129402988" datatype="html">
+        <source>Constellation is required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3249513483374643425" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-add-form/character-add-form.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5755319677204065094" datatype="html">
+        <source>Character&apos;s page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8773135221851876074" datatype="html">
+        <source>This page displays the list of characters from the Genshin Impact game registered on the site.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5665997696581666149" datatype="html">
+        <source>You can filter the list by selecting attributes:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7310390076068982242" datatype="html">
+        <source>Element :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5065449192711377903" datatype="html">
+        <source>Weapon type :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5137491883075639195" datatype="html">
+        <source>Rarity :</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3809290024146412640" datatype="html">
+        <source>You can also add a character by clicking on the button below:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5148916028088347449" datatype="html">
+        <source>Informations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8293043413334612460" datatype="html">
+        <source>Weapon type: <x id="INTERPOLATION" equiv-text="{{character.weapon_type}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4514632240862157101" datatype="html">
+        <source>Element: <x id="INTERPOLATION" equiv-text="{{character.element}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2333056762632706120" datatype="html">
+        <source>Affiliation: <x id="INTERPOLATION" equiv-text="{{character.affiliation}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7076576289287700114" datatype="html">
+        <source>Region: <x id="INTERPOLATION" equiv-text="{{character.region}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5593252223383276527" datatype="html">
+        <source>Rarity: <x id="INTERPOLATION" equiv-text="{{character.rarity}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="275285428395303798" datatype="html">
+        <source>Birthday: <x id="INTERPOLATION" equiv-text="{{formatBirthday(character.birthday)}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6937186916846285661" datatype="html">
+        <source>Constellation: <x id="INTERPOLATION" equiv-text="{{character.constellation}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8566422521368701084" datatype="html">
+        <source>Constellations</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4342625008558026850" datatype="html">
+        <source>Skills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8764515778526984771" datatype="html">
+        <source>actives</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4975179726965960229" datatype="html">
+        <source>passives</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-list/character-list.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3350495883896642818" datatype="html">
+        <source>Modify a character</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3251759404563225821" datatype="html">
+        <source>Modify</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/character-modify-form/character-modify-form.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="2821179408673282599" datatype="html">
         <source>Home</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="sourcefile">src/app/components/entete/entete.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3716215358033101867" datatype="html">
         <source>Characters</source>
         <context-group purpose="location">
-          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="sourcefile">src/app/components/entete/entete.component.html</context>
           <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1069523139277190436" datatype="html">
+        <source>Statistics</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/entete/entete.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4871256303861185740" datatype="html">
+        <source>Statistics&apos; page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4949058838106831357" datatype="html">
+        <source>This page displays statistics on the number of characters registered on the site.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4387843830097297360" datatype="html">
+        <source> Number of characters by element </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.html</context>
+          <context context-type="linenumber">8,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8978035157934945236" datatype="html">
+        <source> Number of characters by weapon type </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.html</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7069034092131703908" datatype="html">
+        <source> Number of characters by rarity </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/stats/stats.component.html</context>
+          <context context-type="linenumber">32,34</context>
         </context-group>
       </trans-unit>
     </body>
